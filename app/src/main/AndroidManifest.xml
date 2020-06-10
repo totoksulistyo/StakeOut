@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="totok.sulistyo.s0">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_laucher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_laucher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".GraphicActivity"
+            android:label="@string/title_activity_graphic"
+            android:parentActivityName=".KalkulatorActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="totok.sulistyo.s0.KalkulatorActivity" />
+        </activity>
+        <activity
+            android:name=".KalkulatorActivity"
+            android:label="@string/title_activity_kalkulator"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="totok.sulistyo.s0.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/abtitle"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="totok.sulistyo.s0.MainActivity" />
+        </activity>
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OpendataActivity"
+            android:label="@string/title_activity_opendata"
+            android:parentActivityName=".Project_Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="totok.sulistyo.s0.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Project_Activity"
+            android:label="@string/title_activity_project_"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="totok.sulistyo.s0.MainActivity" />
+        </activity>
+        <activity
+            android:name=".StakeOut"
+            android:label="@string/title_activity_stake_out"
+            android:parentActivityName=".Project_Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="totok.sulistyo.s0.Project_Activity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="totok.sulistyo.s0.Project_Activity" />
+        </activity>
+    </application>
+
+</manifest>
