@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".StakeOut"
+    tools:layout_editor_absoluteY="56dp"
+    tools:showIn="@layout/activity_stake_out">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="659dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTRlb2"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="   Horizontal Distance"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtHD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="14"
+                android:text="#.##meter"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvclick"
+                android:layout_width="133dp"
+                android:layout_height="46dp"
+                android:layout_alignTop="@+id/imageView5"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="false"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="-7dp"
+                android:layout_marginEnd="233dp"
+                android:layout_marginBottom="90dp"
+                android:text="Click here -->"
+                tools:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iV"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                app:srcCompat="@drawable/ic_linkaran" />
+
+            <ImageView
+                android:id="@+id/iV5"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                app:srcCompat="@drawable/ic_fs" />
+
+            <ImageView
+                android:id="@+id/iV6"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                app:srcCompat="@drawable/ic_bs" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/iV6"
+                android:layout_marginBottom="74dp"
+                app:srcCompat="@drawable/tripot" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="15dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/tripot" />
+
+            <TextView
+                android:id="@+id/txtTRlb"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Turn HR:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtTR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="14"
+                android:text="##º ##' ##&quot;"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="15dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/rambuman" />
+
+            <TextView
+                android:id="@+id/txtRbLb"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Move F/B"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtRambu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="14"
+                android:text="#.##meter"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="15dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/elev" />
+
+            <TextView
+                android:id="@+id/txtUpLb"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Up/Down"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtUP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="14"
+                android:text="#.##meter"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btOcc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OCCUPPY (INST. LOCATION)" />
+
+        <Button
+            android:id="@+id/btbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BACK SIGHT " />
+
+        <Button
+            android:id="@+id/btSO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="S-O Coordinat (Target Point)" />
+
+        <Button
+            android:id="@+id/btSR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STAFF READING" />
+
+        <Button
+            android:id="@+id/btmsr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measure (Calculate)" />
+
+        <Button
+            android:id="@+id/btSD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE DATA" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
